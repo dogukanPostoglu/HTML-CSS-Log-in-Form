@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #f3e0e2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.content-wrapper {
+    box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
+    border-radius: 10px;
+    overflow: hidden;
+    /* background-color: #fff; */
+    max-width: 768px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left {
+    flex: 50%;
+    text-align: center;
+    padding: 30px 0;
+    background-color: #fff;
+}
+
+.left .header {
+    margin-bottom: 50px;
+    font-size: larger;
+}
+
+.left .logos {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+
+}
+
+.left .logos .logo {
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #DDDDDD;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    transition: transform 1s ease-out;
+}
+
+.left .logos .logo:hover {
+    transform: translateY(-10px);
+}
+
+.left .text {
+    margin-bottom: 20px;
+    font-size: larger;
+}
+
+.left .inputs input {
+    padding: 15px;
+    width: 80%;
+    background-color: lightgray;
+    border: none;
+}
+
+.left .inputs .email {
+    margin-bottom: 20px;
+}
+
+.left .question {
+    margin-bottom: 30px;
+    font-size: larger;
+}
+
+.left .userinfo {
+    margin-bottom: 30px;
+}
+
+.left .question a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.left .buton button {
+    padding: 15px;
+    width: 50%;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: #FF4B2B;
+    border: none;
+    font-size: large;
+    color: white;
+    letter-spacing: 2px;
+    transition: background-color 1s ease;
+}
+
+.left button:hover {
+    background-color: #ff4b2bc9;
+}
+
+.right {
+    background: linear-gradient(to right, #FF4B2B, #FF416C);
+    flex: 50%;
+    padding: 0px 40px;
+    text-align: center;
+    color: #ffffffe2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.right .header-right {
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.right span {
+    text-transform: uppercase;
+}
+
+.right p {
+    font-size: large;
+}
+
+@media screen and (max-width:600px) {
+    body {
+        padding: 0px 10px;
+    }
+
+    .right {
+        display: none;
+    }
+}
